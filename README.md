@@ -6,7 +6,7 @@ StreamDebugger class is an Arduino Stream, that dumps all data to another Stream
 
 ## Usage:
 
-```
+```cpp
 #include <StreamDebugger.h>
 StreamDebugger StreamDbg(Serial1, Serial);
 
