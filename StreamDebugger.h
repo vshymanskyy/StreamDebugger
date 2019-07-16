@@ -16,6 +16,8 @@ class StreamDebugger
     StreamDebugger(Stream& data, Stream& dump)
       : _data(data), _dump(dump)
     {}
+    
+    virtual ~StreamDebugger() {}
 
     virtual size_t write(uint8_t ch) {
       _dump.write(ch);
