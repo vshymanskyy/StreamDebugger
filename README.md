@@ -1,5 +1,9 @@
 # StreamDebugger
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Continuous Integration](https://github.com/vshymanskyy/StreamDebugger/actions/workflows/ci.yml/badge.svg)](https://github.com/vshymanskyy/StreamDebugger/actions/workflows/ci.yml)
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/vshymanskyy/library/StreamDebugger.svg)](https://registry.platformio.org/libraries/vshymanskyy/StreamDebugger)
+
 Just allows easier debugging of Serial-based communication on Arduino.
 
 StreamDebugger class is an Arduino Stream, that dumps all data to another Stream for debug purposes.
@@ -30,7 +34,8 @@ void setup() {
 
 void loop() {
     // Start direct-access from Serial to Serial1
-    StreamDbg.directAccess();
+    StreamDbg.directAccessNonBlocking();
+    delay(0);
 }
 ```
 
