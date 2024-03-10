@@ -1,6 +1,6 @@
 {
   "name": "StreamDebugger",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Debugger for Arduino Stream-based communication. This class is an Arduino Stream, that dumps all data to another Stream for debug purposes.",
   "keywords": "Stream, Serial, Debug",
   "authors":
